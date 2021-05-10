@@ -29,6 +29,10 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 
+gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'bootstrap', '~> 4.6.0'
+gem 'jquery-rails'
+
 # Use ActiveStorage variant
 group :production do
   gem 'pg', '~> 0.21' # for Heroku deployment

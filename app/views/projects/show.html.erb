@@ -1,14 +1,16 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Title:</strong>
-  <%= @project.title %>
-</p>
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3"><%= @project.title %></h1>
+    <p><%= @project.description %></p>
+  </div>
+</div>
 
-<p>
-  <strong>Description:</strong>
-  <%= @project.description %>
-</p>
-
-<%= link_to 'Edit', edit_project_path(@project) %> |
-<%= link_to 'Back', projects_path %>
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-default">
+    <%= link_to 'Edit', edit_project_path(@project), :class => 'btn btn-secondary' %>
+  </button>
+  <button type="button" class="btn btn-default">
+    <%= link_to 'Back', projects_path, :class => 'btn btn-secondary' %>
+  </button>
+</div>
